@@ -1,10 +1,14 @@
 # 🧠💥 braincannon
 
-A simple command-line tool to post to Bluesky social media platform. Fire off your thoughts into the void without looking back—just like the old Twitter SMS days.
+A very simple command-line tool to post to Bluesky social media platform. 
 
 ## What is this?
 
-braincannon lets you yeet thoughts to Bluesky from your terminal. No UI, no distractions, no immediate feedback on how badly your post is doing. Just pure, unfiltered thought-slinging.
+braincannon lets you yeet thoughts to Bluesky from your terminal.
+
+I don't think you should really do this if you're a real poster in the modern era.
+
+Basically a proof of concept how easily AP protocol gets botted. I did this with copilot.
 
 ## Features
 
@@ -19,7 +23,7 @@ braincannon lets you yeet thoughts to Bluesky from your terminal. No UI, no dist
 
 - Python 3.8 or higher
 - A Bluesky account
-- Bash shell (for the launcher script)
+- Bash-like shell (zsh and all the fancy supported)
 
 ## Installation
 
