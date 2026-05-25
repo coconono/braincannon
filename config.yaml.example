@@ -1,0 +1,10 @@
+# Bluesky Configuration
+# Copy this file to config.yaml and fill in your credentials
+# NEVER commit config.yaml to version control!
+
+# Your Bluesky handle (e.g., yourname.bsky.social)
+handle: "yourhandle.bsky.social"
+
+# App-specific password generated from Bluesky settings
+# Go to: Settings > Privacy and Security > App Passwords > Add App Password
+app_password: "your-app-password-here"
