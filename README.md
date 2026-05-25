@@ -1,6 +1,6 @@
 # 🧠💥 braincannon
 
-A very simple command-line tool to post to Bluesky social media platform. 
+A very simple command-line tool to post to Bluesky social media platform.
 
 ## What is this?
 
@@ -8,7 +8,9 @@ braincannon lets you yeet thoughts to Bluesky from your terminal.
 
 I don't think you should really do this if you're a real poster in the modern era.
 
-Basically a proof of concept how easily AP protocol gets botted. I did this with copilot.
+Basically a proof of concept to show how easily AP protocol is botted. I did this with copilot.
+
+you could do better with a weekend and a lot of gmail accounts.
 
 ## Features
 
@@ -66,7 +68,7 @@ Basically a proof of concept how easily AP protocol gets botted. I did this with
 Post a simple message:
 
 ```bash
-./braincannon.sh "Just had the best coffee ever!"
+./braincannon.sh "braincannon fire!"
 ```
 
 ### Read from stdin
@@ -124,7 +126,7 @@ Create an alias for quick posting:
 alias yeet='~/scripts/braincannon/braincannon.sh'
 
 # Then use it:
-yeet "Short thought, big impact"
+yeet "I am going to spend the rest of my night editing AI cringe out of the frickin readme"
 ```
 
 ## How It Works
@@ -192,22 +194,7 @@ Bluesky has a 300 character limit. The script will automatically truncate longer
 
 ## Contributing
 
-Contributions welcome! This is a simple tool, but if you have ideas:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-Ideas for enhancements:
-
-- Support for images/media
-- Multiple account management
-- Scheduling posts
-- Thread support
-- Draft management
-- Interactive mode
+you can fork this and do whatever, don't expect me to integrate it.
 
 ## License
 
@@ -215,8 +202,4 @@ Use it however you want. No warranty. Don't blame me if your posts are bad.
 
 ## Philosophy
 
-Sometimes you just need to throw a thought into the void without the immediate feedback loop of social media. This tool is for those moments. Post and move on with your life.
-
----
-
-*"Fire and forget" - The braincannon way* 🧠💥
+do good stuff with this tool. Please. Don't be a jerk.
