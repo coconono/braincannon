@@ -11,6 +11,7 @@ import argparse
 from pathlib import Path
 from datetime import datetime
 from atproto import Client
+from atproto_client.utils import detect_facets
 from time import sleep
 
 
@@ -67,8 +68,11 @@ def post_to_bluesky(text, config, max_retries=3):
             # Login to Bluesky
             client.login(config['handle'], config['app_password'])
             
+            # Detect facets for links, hashtags, and mentions
+            facets = detect_facets(text)
+            
             # Create the post
-            response = client.send_post(text=text)
+            response = client.send_post(text=text, facets=facets)
             
             print(f"✓ Successfully posted to Bluesky!")
             print(f"Post URI: {response.uri}")

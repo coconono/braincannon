@@ -15,6 +15,7 @@ you could do better with a weekend and a lot of gmail accounts.
 ## Features
 
 - 🚀 Post text to Bluesky from command line
+- 🔗 Auto-embeds links, hashtags, and mentions
 - 🔁 Automatic retry logic with exponential backoff
 - 📝 Read from stdin or command-line arguments
 - ⚙️ Simple YAML configuration
@@ -140,10 +141,25 @@ yeet "I am going to spend the rest of my night editing AI cringe out of the fric
 2. **braincannon.py** - Main Python script that:
    - Loads credentials from `config.yaml`
    - Authenticates with Bluesky using AT Protocol
+   - Auto-detects links, hashtags, and mentions (facets)
    - Posts your text
    - Retries on failure with exponential backoff
 
 3. **config.yaml** - Your credentials (not in version control)
+
+## Links, Hashtags & Mentions
+
+braincannon automatically detects and embeds:
+
+- **URLs** (e.g. `https://example.com`) → clickable links with link-card previews
+- **Hashtags** (e.g. `#braincannon`) → clickable, searchable tags
+- **Mentions** (e.g. `@username.bsky.social`) → clickable profile links
+
+Just include them in your post text and braincannon handles the rest:
+
+```bash
+./braincannon.sh "Check out https://example.com #braincannon @yourfriend.bsky.social"
+```
 
 ## Python Environment
 
